@@ -6,7 +6,7 @@ build:
         code: go version
 
 deploy:
-  box: python
+  box: google/python
   steps:
     - script:
         name: testing deploy section
