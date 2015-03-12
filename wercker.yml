@@ -1,11 +1,11 @@
-deploy:
+build:
   box: google/golang
   steps:
     - script:
         name: testing123
         code: go version
 
-build:
+deploy:
   box: python
   steps:
     - script:
