@@ -1,0 +1,13 @@
+build:
+  box: google/golang
+  steps:
+    - script:
+        name: testing build section
+        code: go version
+
+deploy:
+  box: python
+  steps:
+    - script:
+        name: testing deploy section
+        code: python --version
