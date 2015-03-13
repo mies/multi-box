@@ -1,13 +1,13 @@
 build:
+  box: nodesource/node:trusty
+  steps:
+    - script:
+        name: testing build
+        code: node --version
+
+deploy:
   box: google/golang
   steps:
     - script:
-        name: testing123
-        code: go version
-
-deploy:
-  box: mongo
-  steps:
-    - script:
-        name: testing deploy section
-        code: echo "hello from mongo"
+        name: testing deploy
+        code: go --version
