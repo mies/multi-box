@@ -6,8 +6,8 @@ build:
         code: go version
 
 deploy:
-  box: python
+  box: mongo
   steps:
     - script:
         name: testing deploy section
-        code: python --version
+        code: echo "hello from mongo"
