@@ -1,11 +1,11 @@
-build:
+deploy:
   box: nodesource/node:trusty
   steps:
     - script:
         name: testing build
         code: node --version
 
-deploy:
+build:
   box: python:2.7.9
   steps:
     - script:
