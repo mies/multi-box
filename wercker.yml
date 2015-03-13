@@ -6,8 +6,8 @@ build:
         code: node --version
 
 deploy:
-  box: google/golang
+  box: python:2.7.9
   steps:
     - script:
         name: testing deploy
-        code: go --version
+        code: python --version
